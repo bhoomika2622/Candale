@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    font-style:italic;
+    font-size: larger;
+    color:rgb(150, 61, 109);
+    text-align: center;
+    background-color: lightpink;
+    height: 35px;
+}
+.hmburger1{
+    align-self: center;
+    justify-self: start;
+    width: 90px;
+    cursor: pointer;
+
+}
+.hmburger2{
+    align-self: center;
+        
+}
+.hmburger3{
+    align-self: center;
+    justify-self: end;
+    width: 90px;
+    left: 150px;
+    cursor: pointer;
+}
+    
+.photos{
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,3fr);
+}
+.product{
+    height: 300px;
+    width: 300px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 40px;
+    border-radius: 15px;
+    object-fit: cover; 
+}
+.candles{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.candles p{
+    text-align: center;
+}
+.button{
+    padding:5px;
+    margin-bottom: 5px;
+    background-color:lightpink;
+    color:rgb(184, 84, 101);
+    border:none;
+    height: 36px;
+    width: 135px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: medium;
+    text-align: center;
+}
+.product:hover{
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+.aboutus{
+    width: 100%;
+    margin-top:30px ;
+    text-align: center;
+    color: rgb(200, 86, 145);
+    background-color:  pink;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.homelink,.homeshopping,.homelogin{
+    color:rgb(150, 61, 109);
+    text-decoration: none;
+
+}
+
+.homeshopping{
+    margin-right: 10px;
+}
+.hmburger3 span{
+    position: absolute;
+    border-radius: 50%;
+    background-color: pink;
+    border: 0.2px solid palevioletred;
+    height: 18px;
+    display: flex;
+    width: 18px;
+    top: 15px;
+    right: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .photos {
+        grid-template-columns: 1fr;
+    }
+    .product {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .candles {
+        text-align: center;
+    }
+}
+
+
